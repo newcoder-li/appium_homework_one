@@ -1,0 +1,24 @@
+- by: xpath
+  locator: //*[@resource-id="com.tencent.wework:id/au0"and @text="必填"]
+  action: send
+  value: "{value}"
+
+- by: xpath
+  locator: //*[@text="男"]
+  action: click
+
+- action: wait
+  locator: {'xpath', '//*[@text="女"]'}
+
+- by: xpath
+  locator: //*[@text="女"]
+  action: click
+
+- by: xpath
+  locator: //*[@text="手机号"]
+  action: send
+  value: "{value2}"
+
+- by: xpath
+  locator: //*[@text="保存"]
+  action: click
